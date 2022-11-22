@@ -36,7 +36,7 @@ T = [['.....', '..0..', '.000.', '.....', '.....'], ['.....', '..0..', '..00.', 
 
 figuras = [S, Z, I, O, J, L, T]
 colores_figuras= [(0, 255, 0), (255, 0, 0), (0, 255, 255), (255, 255, 0), (255, 165, 0), (0, 0, 255), (128, 0, 128)]
-# index 0 - 6 represent shape
+# index 0 - 6 
 
 class Pieza(object):
     filas = 20  # y
@@ -118,7 +118,7 @@ def dibujar_cuadricula(surface, fila, columna):
 
 
 def desaparecer_filas(cuadricula, bloqueadas):
-    # need to see if row is clear the shift every other row above down one
+    # Se necesita ver si la fila está despejada
 
     aumento = 0
     for i in range(len(cuadricula)-1, -1, -1):
